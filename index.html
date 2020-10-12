@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Link styles-->
+    <link rel="stylesheet" href="Style/index.css" />
+    <link rel="stylesheet" href="Style/header.css" />
+    <link rel="stylesheet" href="Style/burgerMenu.css" />
+    <link rel="stylesheet" href="Style/home.css" />
+    <link rel="stylesheet" href="Style/descriptions.css" />
+    <link rel="stylesheet" href="Style/portfolio.css" />
+    <link rel="stylesheet" href="Style/collage.css" />
+    <link rel="stylesheet" href="Style/news.css" />
+    <link rel="stylesheet" href="Style/scrollbar.css" />
+    <link rel="stylesheet" href="Style/footer.css" />
+
+    <!--Link Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="content header__content">
+        <div class="header__burgerMenu header__item">
+          <div class="burgerMenu__icon burgerMenu__close">
+            <div onclick="burgerMenu()" class="lineWrap">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__logo header__item">My site</div>
+        <div class="header__menu header__item">
+          <ul>
+            <li class="menu__item"><a href="#Home">Home</a></li>
+            <li class="menu__item"><a href="#Description">Descriptions</a></li>
+            <li class="menu__item"><a href="#Portfolio">Portfolio</a></li>
+            <li class="menu__item"><a href="#News">News</a></li>
+            <li class="menu__item"><a href="#Footer">Footer</a></li>
+          </ul>
+        </div>
+        <div class="header__contacts header__item">
+          <span>+380672816935</span>
+          <span>+360982515359</span>
+        </div>
+        <div class="header__button header__item">
+          <a href="#">
+            <div class="button_eclipse"></div>
+            <span class="button__text">ЗАКАЗАТИ ПОСЛУГУ</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="content Main__content">
+      <div class="burgerMenu"></div>
+      <div class="home screen" id="Home">
+        <div class="home__background">
+          <img src="Image/pexels-startup-stock-photos-7070.jpg" alt="HomeBg" />
+        </div>
+        <div class="home__posterLogo">
+          <div class="posterLogo__Text">
+            My site <br />
+            <span>real page</span>
+          </div>
+          <div class="posterLogo__Pict">
+            <img
+              src="Image/iconfinder_female-portrait-avatar-profile-woman-sexy-redhead_638181.png"
+              alt="Pict Logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="description screen" id="Description">
+        <div class="description__background">
+          <video
+            src="Image/video/video.mp4"
+            autoplay
+            muted
+            width="100%"
+            loop
+          ></video>
+        </div>
+        <div class="description__list">
+          <ul>
+            <li class="descriptions__item">
+              <div class="item__text">
+                <span class="item__num"></span>
+                <span class="item__title">Design</span>
+              </div>
+              <div class="description__storage">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio perferendis quasi eligendi labore velit possimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio perferendis quasi eligendi labore velit possimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio perferendis quasi eligendi labore velit possimus!
+              </div>
+            </li>
+            <li class="descriptions__item">
+              <div class="item__text">
+                <span class="item__num"></span>
+                <span class="item__title">Development</span>
+              </div>
+              <div class="description__storage">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                obcaecati nam dicta maxime qui? Blanditiis rerum hic ipsum
+                veritatis. Iure fugiat doloribus in harum ullam. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Aut obcaecati nam
+                dicta maxime qui? Blanditiis rerum hic ipsum veritatis. Iure
+                fugiat doloribus in harum ullam. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aut obcaecati nam dicta maxime
+                qui? Blanditiis rerum hic ipsum veritatis. Iure fugiat doloribus
+                in harum ullam.
+              </div>
+            </li>
+            <li class="descriptions__item">
+              <div class="item__text">
+                <span class="item__num"></span>
+                <span class="item__title">Marketing</span>
+              </div>
+              <div class="description__storage">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquid quasi aperiam, debitis iusto, excepturi culpa in
+                adipisci necessitatibus quae assumenda magni eveniet unde itaque
+                exercitationem est tempora. Dolor, inventore ullam! Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Aut obcaecati nam
+                dicta maxime qui? Blanditiis rerum hic ipsum veritatis. Iure
+                fugiat doloribus in harum ullam. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aut obcaecati nam dicta maxime
+                qui? Blanditiis rerum hic ipsum veritatis. Iure fugiat doloribus
+                in harum ullam.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- -- -- rework descScreen-->
+
+      <div class="portfolio" id="Portfolio">
+        <div class="portfolio__left" >
+          <div class="portfolio__decor">ПОРТФОЛІО</div>
+        </div>
+        <div class="portfolio__right">
+          <div class="portfolio__buttonAndDescription">
+            <div class="portfolio__description">
+              <span class="description_title">Мої роботи</span> <br />
+              <span class="description_text"
+                >Заказать создание сайта – это отличное решение для любого
+                бизнеса, ориентированного на клиентов и готового обеспечивать
+                качественное обслуживание или предлагать качественные
+                товары.</span
+              >
+            </div>
+            <div class="portfolio__button">
+              <a class="button__a" href="">
+                <div class="button__decor decor1"></div>
+                <div class="button__decor decor2"></div>
+                <div class="button__decor decor3"></div>
+                <div class="button__arrowRight"><img src="Image/iconfinder_left_2_4829870.png" alt="iconArrow"></div>
+                <div class="button__icon">
+                  <img
+                    src="Image/iconfinder_Resume_Suitcase_2316261.png"
+                    alt="button icon"
+                  />
+                </div>
+                <span class="button__text">Перейти</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collage screen" id="Collage">
+        <div class="collage__front">
+          <div class="collage__text">
+            <h2  class="text__title">Останні роботи</h2>
+            <p class="text__description">Разрабатываем действующую маркетинговую
+              стратегию, от нуля до запуска. Работаем 
+             до результата. Обеспечиваем рост 
+             онлайн-продаж.</p>
+          </div>
+        </div>
+        <div class="collage__item_BW"><img src="Image/pexels-vlad-alexandru-popa-1402787.jpg" alt="photo"></div>
+        <div class="collage__item"><img src="Image/pexels-pixabay-315191.jpg" alt="photo"></div>
+        <div class="collage__item"><img src="Image/pexels-edgars-kisuro-1488463.jpg" alt="photo"></div>
+      </div>
+      <div onclick="UpC()" class="collage__upload">
+        Показати більше  ->
+      </div>
+      <div class="news screen" id="News">
+        <div class="news__title"><h2>NEWS</h2></div>
+        <div class="news__sliderWrap">
+          <div class="news__slider">
+            <div class="news__slide">
+              <div class="slide__contentL"><div class="slide__img"><img src="Image/pexels-kaboompics-com-5943 (1).jpg" alt="IMG"></div></div>
+              <div class="slide__contentR"><div class="slide__title"><h3>title</h3></div>
+                <div class="slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum totam sequi rerum fugit quam, aut fuga nisi ratione nemo commodi inventore illo expedita debitis repudiandae libero perferendis ea eum!
+              </div>
+              <span class="slide__number">00</span>
+            </div>
+          </div>
+          <div class="news__slide">
+            <div class="slide__contentL"><div class="slide__img"><img src="Image/pexels-kaboompics-com-5943 (1).jpg" alt="IMG"></div></div>
+            <div class="slide__contentR"><div class="slide__title"><h3>title</h3></div>
+              <div class="slide__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum totam sequi rerum fugit quam, aut fuga nisi ratione nemo commodi inventore illo expedita debitis repudiandae libero perferendis ea eum!
+            </div>
+            <span class="slide__number">00</span>
+          </div>
+        </div>
+        <div class="news__slide">
+          <div class="slide__contentL"><div class="slide__img"><img src="Image/pexels-kaboompics-com-5943 (1).jpg" alt="IMG"></div></div>
+          <div class="slide__contentR"><div class="slide__title"><h3>title</h3></div>
+            <div class="slide__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum totam sequi rerum fugit quam, aut fuga nisi ratione nemo commodi inventore illo expedita debitis repudiandae libero perferendis ea eum!
+          </div>
+          <span class="slide__number">00</span>
+        </div>
+      </div>   
+          </div>
+          <div class="slider__control">
+            <div class="slider__button">
+              <div onclick="sliderJsFile(-1)" class="slider__buttonLeft"><div class="Sliderbutton__decor"></div></div>
+              <div onclick="sliderJsFile(1)" class="slider__buttonRight"><div class="Sliderbutton__decor"></div></div>
+            </div>
+            <div class="slider__current">
+              <div onclick="CurrentGear(0)" class="slide__currentItem"></div>
+              <div onclick="CurrentGear(1)" class="slide__currentItem"></div>
+              <div onclick="CurrentGear(2)" class="slide__currentItem"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="Footer"><div class="content footer__content">THANK YOU</div></footer>
+
+    <!--Link library-->
+    <script src=" https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Link Scripts-->
+    <script src="Script/index.js"></script>
+    <script src="Script/anim.js"></script>
+    <script src="Script/collageUpload.js"></script>
+    <script src="Script/slider.js"></script>
+  </body>
+</html>

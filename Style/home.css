@@ -1,0 +1,129 @@
+.home {
+    position: relative;
+}
+
+.home__background {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 85%;
+}
+
+.home__background>img {
+    width: 100%;
+    text-align: center;
+}
+
+.home__posterLogo {
+    position: absolute;
+    top: calc(100vh - 120px);
+    transform: translate(0, -100%);
+    right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.posterLogo__Pict>img {
+    width: 300px;
+    animation-name: posterLogoPictAnim;
+    animation-duration: 1s;
+    animation-direction: normal;
+    z-index: 1;
+}
+
+.posterLogo__Text {
+    font-size: 150px;
+    font-family: 'Bitter';
+    font-weight: bold;
+    color: #8ad2f3;
+    text-align: end;
+    line-height: 0.5;
+    animation-name: posterLogoTextAnim;
+    animation-duration: 2s;
+    animation-direction: normal;
+    z-index: 3;
+}
+
+.posterLogo__Text>span {
+    font-size: 70px;
+}
+
+
+/** Media screen **/
+@media screen and (max-width: 1010px){
+    .posterLogo__Text {
+    font-size: 100px;
+    line-height: 0.7;
+    }
+    posterLogo__Text>span {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 860px){
+    .home__background>img {
+        height: 100%;
+        width: auto;
+        text-align: center;
+    }
+    .home__posterLogo {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .home__posterLogo {
+        right: 50%;
+        transform: translate(+50%, -100%);
+        flex-direction: column;
+    }
+    .posterLogo__Pict>img {
+        width: 150px;
+    }
+    .posterLogo__Text {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .posterLogo__Text {
+        font-size: 70px;
+        line-height: 0.5;
+        white-space: nowrap;
+    }
+    .posterLogo__Text>span{
+        font-size: 20px;
+    }
+}
+
+
+/**Keyframes**/
+@keyframes posterLogoTextAnim {
+    0%{
+        transform: translate(1000px, 0);
+    }
+    40%{
+        transform: translate(1000px, 0);
+    }
+    70%{
+        transform: translate(-100px, 0);
+    }
+    100%{
+        transform: translate(0px, 0);
+    }
+}
+
+@keyframes posterLogoPictAnim {
+    0%{
+        transform: translate(1000px, 0);
+    }
+    70%{
+        transform: translate(-30px, 0); 
+    }
+    100%{transform: translate(0, 0);}
+}

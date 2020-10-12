@@ -1,0 +1,17 @@
+.footer__content {
+    width: 100%;
+    padding: 20px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 150px;
+    background-color: #f2194c;
+    box-sizing: border-box;
+}
+
+/**Media query**/
+
+@media screen and (max-width: 555px){
+    .footer__content {
+        font-size: 70px;
+    }
+}
